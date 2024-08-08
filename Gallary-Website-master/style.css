@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.8)),
+                url('photopix/banner1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.logo{
+    font-family: sans-serif;
+    font-size: 2.5rem;
+}
+
+.logo span{
+    color: #e74c3c;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.menu a:first-child{
+    color: #e74c3c;
+}
+
+.menu a:hover{
+    color: #e74c3c;
+}
+
+.icon i{
+    font-size: 20px;
+}
+
+.icon i:hover{
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+.icon a{
+    text-decoration:  none;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+.icon a:hover{
+    background-color: #ee2610;
+}
+
+
+.h-text{
+    color: white;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#camera{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.h-text h1{
+    font-family: sans-serif;
+    font-size: 3em;
+    list-style: 1.5em;
+}
+
+.h-text input{
+    width: 60%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.h-text button{
+    width: 30%;
+    padding: 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.h-text button:hover{
+    cursor: pointer;
+    background-color: #ee2610;
+}
+
+.filter-gallery{
+    padding: 100px;
+}
+
+.portfolio-menu{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    text-align: center;
+}
+
+.portfolio-menu ul li:hover{
+    color: white;
+    background: #e74c3c;
+    border-radius: 8px;
+}
+
+li.active{
+    color: white;
+    background: #e74c3c;
+    border-radius: 8px;
+}
+
+.portfolio-item{
+    width: 100%;
+    margin-left: 70px;
+}
+
+.portfolio-item .item{
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.portfolio-item .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.member{
+    width: 100%;
+    padding: 20px 100px;
+    font-family: sans-serif;
+}
+
+.member-info{
+    text-align: center;
+}
+
+.member-info h1{
+    font-size: 25.rem;
+}
+
+.member-info h1 span{
+    color: #e74c3c;
+}
+
+.member-card{
+    text-align: center;
+    padding-top: 50px;
+    width: 50%;
+    margin: auto;
+}
+
+.member-card p{
+    margin: 20px 0px;
+    line-height: 2em;
+}
+
+.member-card h2{
+    margin: 20px 0px;
+}
+
+.m-images{
+    width: 100%;
+    margin: 20px 0px;
+    margin-left: 60px;
+}
+
+.m-images img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.m-images img:hover{
+    transform: scale(1.25);
+}
+
+footer{
+    width: 100%;
+    height: 80vh;
+    background-color: #262626;
+    padding: 50px 100px;
+}
+
+.newletter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-family: sans-serif;
+}
+
+.newletter > div{
+    flex-basis: 50%;
+}
+
+.ntext{
+    text-align: right;
+}
+
+.newletter h2{
+    font-size: 2em;
+}
+
+.newletter p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.newletter label{
+    position: relative;
+}
+
+.newletter input{
+    padding: 8px 15px;
+    width: 70%;
+    outline: none;
+    background-color: #262626;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.newletter button{
+    width: 100px;
+    padding: 8px 12px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin-left: 5px;
+    font-family: sans-serif;
+    background-color: #262626;
+    outline: none;
+    color: white;
+}
+
+.newletter button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.f-contact{
+    color: white;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 15px;
+    line-height: 2.2em;
+    position: relative;
+    top: 120px;
+}
+
+.f-contact > div{
+    flex-basis: 25%;
+    margin-right: 10px;
+}
+
+.f-contact > div h1{
+    margin-bottom: 50px;
+}
+
+.f-contact > div p{
+    color: grey;
+    cursor: pointer;
+}
+
+.f-contact > div p:hover{
+    color: rgb(243, 243, 243);
+}
+
+.f-contact div i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.f-contact div i:hover{
+    transform: scale(1.25);
+}
